@@ -19,14 +19,12 @@ public enum EnumMounts implements IMount{
 
 	@Override
 	public String getType() {
-		// TODO Auto-generated method stub
-		return null;
+		return type;
 	}
 
 	@Override
 	public double durationOfTheTrip(int distance) {
-		// TODO Auto-generated method stub
-		return 0;
+		return distance/velocity;
 	}
 	
 	
