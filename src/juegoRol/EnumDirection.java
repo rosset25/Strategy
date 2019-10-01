@@ -28,4 +28,20 @@ public enum EnumDirection {
 		return direction;
 	}
 	
+	public static EnumDirection getOption(int position) {
+	    return values()[position];
+	}
+
+	public static String getMenu() {
+	    StringBuilder sb = new StringBuilder();
+	    for(EnumDirection option: EnumDirection.values()) {
+	        sb.append(option.ordinal());
+	        sb.append(".- ");
+	        sb.append(option.getDirection());
+	        sb.append("\n");
+	    }
+	    return sb.toString();
+	}
+	
+	
 }

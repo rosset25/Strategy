@@ -53,7 +53,6 @@ public abstract class Character {
 	}
 	
 	public void info() {
-		//PONER TIPOPERSONAJE, NOMBRE, ARMA, PUNTOS DAÑO ARMA, TIPO MONTURA
 		
 		
 		StringBuilder message = new StringBuilder();

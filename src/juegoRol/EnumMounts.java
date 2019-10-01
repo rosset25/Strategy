@@ -27,6 +27,20 @@ public enum EnumMounts implements IMount{
 		return distance/velocity;
 	}
 	
+	public static EnumMounts getOption(int position) {
+	    return values()[position];
+	}
+
+	public static String getMenu() {
+	    StringBuilder sb = new StringBuilder();
+	    for(EnumMounts option: EnumMounts.values()) {
+	        sb.append(option.ordinal());
+	        sb.append(".- ");
+	        sb.append(option.getType());
+	        sb.append("\n");
+	    }
+	    return sb.toString();
+	}
 	
 	
 	
