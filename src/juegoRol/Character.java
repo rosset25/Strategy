@@ -29,6 +29,8 @@ public abstract class Character {
 		message.append(" uses " + weapon.getType());
 		message.append(" and makes ");
 		message.append(weapon.pointsDamage() + " points of damage.");
+		
+		System.out.println(message);
 	}
 	
 	public void selectMount(IMount mount) {
@@ -45,10 +47,14 @@ public abstract class Character {
 		message.append(" uses " + mount.getType());
 		message.append(", go to "+ direction.getDirection()+". \n");
 		message.append("current position: (" + posX + ", " + posY + ") \n");
-		message.append("duration: " + mount.durationOfTheTrip(distance) + "km.");
+		message.append("duration: " + String.format("%.2f", mount.durationOfTheTrip(distance))    + "s.");
+		
+		System.out.println(message);
 	}
 	
 	public void info() {
+		//PONER TIPOPERSONAJE, NOMBRE, ARMA, PUNTOS DAÑO ARMA, TIPO MONTURA
+		
 		
 		StringBuilder message = new StringBuilder();
 		message.append("Name: " + name + "\n");
@@ -56,6 +62,8 @@ public abstract class Character {
 		message.append("Wepaon: " + weapon.getType() + "\n");
 		message.append("Position: " + posX + ", " + posY);
 		
-		//TODO PONER TIPOPERSONAJE, NOMBRE, ARMA, PUNTOS DAÑO ARMA, TIPO MONTURA
+		System.out.println(message);
+		
+		
 	}
 }

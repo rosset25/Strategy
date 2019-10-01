@@ -9,7 +9,7 @@ public class Knight extends Character{
 
 	@Override
 	public String getType() {
-		return "Wizard";
+		return "Knight";
 	}	
 	
 
