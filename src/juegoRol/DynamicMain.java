@@ -2,7 +2,7 @@ package juegoRol;
 
 import java.util.Scanner;
 
-public class DynamicName {
+public class DynamicMain {
 	
 	public static void main(String[] args) {
 		System.out.println("Choose a character:");
@@ -55,6 +55,7 @@ public class DynamicName {
 
 		character.useWeapon();
 		
+		sc.close();
 
 		
 		
