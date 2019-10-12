@@ -1,4 +1,4 @@
-# Patrón Strategy
+# Strategy Pattern
 
 Crear varios elementos de un pequeño juego de rol utilizando el patrón Strategy
 
